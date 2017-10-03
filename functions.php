@@ -1,6 +1,6 @@
 <?php
-
-add_filter('get_the_date', 'wpp_fix_post_time', 10, 2);
+if (function_exists('wpp_fix_post_time'))
+    add_filter('get_the_date', 'wpp_fix_post_time', 10, 2);
 
 load_theme_textdomain('default', get_template_directory() . '/languages');
 
@@ -71,8 +71,8 @@ function showing_months_in_archive()
 {
     ?>
     <input type="checkbox" name="showing_months_in_archive"
-           id="showing_months_in_archive" <?php  (get_option('showing_months_in_archive')) ? 'checked' : '' ?> />
-    <?php  (get_option('showing_months_in_archive')) ? __('Active') : __('Deactive') ?>
+           id="showing_months_in_archive" <?php (get_option('showing_months_in_archive')) ? 'checked' : '' ?> />
+    <?php (get_option('showing_months_in_archive')) ? __('Active') : __('Deactive') ?>
     <?php
 }
 
@@ -80,8 +80,8 @@ function showing_comments_count_in_archive()
 {
     ?>
     <input type="checkbox" name="showing_comments_count_in_archive"
-           id="showing_comments_count_in_archive" <?php  (get_option('showing_comments_count_in_archive')) ? 'checked' : '' ?> />
-    <?php  (get_option('showing_comments_count_in_archive')) ? __('Active') : __('Deactive') ?>
+           id="showing_comments_count_in_archive" <?php (get_option('showing_comments_count_in_archive')) ? 'checked' : '' ?> />
+    <?php (get_option('showing_comments_count_in_archive')) ? __('Active') : __('Deactive') ?>
     <?php
 }
 
