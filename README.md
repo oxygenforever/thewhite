@@ -7,12 +7,13 @@ Simple wordpress theme.
 Work in progress.
 
 ## Screenshot
-![Screenshot](https://raw.githubusercontent.com/TheYahya/thewhite/master/screenshot.png)
+
+<a href="https://theyahya.com/blog/"><img src="https://raw.githubusercontent.com/TheYahya/thewhite/master/screenshot.png" width="480px"/></a>
 
 ## To-Do list
 
 - [x] Automate the compile of sass and language files with gulp.
-- [x] Add a label option for post that can be recognize in archive(index).
+- [ ] Add a label option for post that can be recognize in archive(index).
 - [ ] Added fully english support and ltr.
 - [ ] Clean up the fonts mess!
 - [ ] Make header & footer links dynamics.
